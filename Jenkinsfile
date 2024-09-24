@@ -13,6 +13,7 @@ pipeline {
         steps{
             git branch: "${BRANCH_NAME}", url: "${GIT_URL}"
         }
+        
        }
        stage('docker build'){
         steps{
@@ -20,5 +21,6 @@ pipeline {
             sh 'docker images'
         }
        }
+       
      }
 }
