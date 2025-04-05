@@ -8,6 +8,7 @@ pipeline {
         IMAGE_VERSION = "${BUILD_NUMBER}"
     }
 
+
      stages{
        stage('git checkout'){
         steps{
